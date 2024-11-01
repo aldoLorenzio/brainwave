@@ -1,13 +1,19 @@
-import { useState } from "react";
+import ButtonGradient from "./assets/svg/ButtonGradient"
+import Button from "./components/Button";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const App = () => {
   return (
     <>
-      <h1 className="text-5xl text-red-400">Testing</h1>
+      <h1 className="text-3xl font-bold underline">Hello World</h1>
+
+      <div className="">
+        <Button className="mt-10" href="#login">
+          Something
+        </Button>
+      </div>
+      <ButtonGradient />    
     </>
-  );
+  )
 }
 
 export default App;
